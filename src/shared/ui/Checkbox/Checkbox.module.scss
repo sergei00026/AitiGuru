@@ -1,17 +1,51 @@
 .wrapper {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin-bottom: 20px;
+  padding-top: 4px;
 }
 
 .label {
   cursor: pointer;
-  font-size: 14px;
-  color: #333;
-  user-select: none; /* чтобы текст не выделялся при клике */
+  user-select: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #9c9c9c;
 }
 
 .input {
-  margin-right: 8px;
+  margin-right: 10px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid #9c9c9c;
+  border-radius: 3px;
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:checked {
+    border-color: #007bff;
+
+    &::after {
+      content: '';
+      width: 6px;
+      height: 12px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  &:hover {
+    border-color: #666;
+  }
+  &:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
 }

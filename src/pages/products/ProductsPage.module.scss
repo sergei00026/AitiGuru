@@ -1,0 +1,171 @@
+.page {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  label{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #b2b3b9;
+}
+
+.sortableHeader {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortableHeader:hover {
+  background-color: #e0e0e0;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.thumbnail {
+  border: 1px solid #ececeb;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: #c4c4c4;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.lowRating {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.paginationButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.paginationButton {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.paginationButton:hover {
+  background-color: #f0f0f0;
+}
+
+.paginationButton.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.paginationButton:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.ellipsis {
+  padding: 8px 0;
+}
+
+.icon {
+  width: 28px !important;
+  height: 28px !important;
+  display: block;
+}
+
+.searchInput {
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.titleActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  button {
+    margin-top: 0;
+  }
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.productBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p:first-child {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #161919;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  p:last-child {
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #b2b3b9;
+  }
+}

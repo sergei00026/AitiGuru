@@ -1,0 +1,17 @@
+.indicator {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.dot {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  width: 6px;
+  height: 18px;
+  background: #d8d8d8;
+}
+
+.filled {
+  background: #949494;
+}
