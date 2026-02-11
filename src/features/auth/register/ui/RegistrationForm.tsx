@@ -5,7 +5,7 @@ import { Input } from '@/shared/ui/Input/Input';
 import { Button } from '@/shared/ui/Button/Button';
 import { registrationSchema } from '@/features/auth/lib/validation';
 import type { RegistrationFormValues } from '@/features/auth/lib/validation';
-import {Separator} from "@/shared/ui/Separator/Separator.tsx";
+import {Separator} from "@/shared/ui/Separator/Separator";
 import style from "@/features/auth/login/ui/login.module.scss";
 import {useEffect} from "react";
 

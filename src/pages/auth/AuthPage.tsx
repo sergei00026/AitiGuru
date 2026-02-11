@@ -3,7 +3,7 @@ import { LoginForm } from '@/features/auth/login/ui/LoginForm';
 import { RegistrationForm } from '@/features/auth/register/ui/RegistrationForm';
 import   LogoIcon  from '@/assets/logo.svg?react'; // Изменяем импорт
 import styles from './AuthPage.module.scss';
-import {ToggleAuthButton} from "@/features/auth/ToggleAuth/ui/ToggleAuthButton.tsx";
+import {ToggleAuthButton} from "@/features/auth/ToggleAuth/ui/ToggleAuthButton";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);

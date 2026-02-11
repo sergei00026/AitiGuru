@@ -22,7 +22,7 @@ import Settings from '@/assets/Settings.svg?react';
 import Refresh from '@/assets/Refresh.svg?react';
 import Filter from '@/assets/Filter.svg?react';
 import PlusCircle from '@/assets/PlusCircle.svg?react';
-import {Checkbox} from "@/shared/ui/Checkbox/Checkbox.tsx";
+import {Checkbox} from "@/shared/ui/Checkbox/Checkbox";
 
 const PRODUCTS_PER_PAGE = 10;
 

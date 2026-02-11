@@ -7,7 +7,7 @@ import { Checkbox } from '@/shared/ui/Checkbox/Checkbox';
 import { loginSchema } from '@/features/auth/lib/validation';
 import type { LoginFormValues } from '@/features/auth/lib/validation';
 import style from'./login.module.scss'
-import {Separator} from "@/shared/ui/Separator/Separator.tsx";
+import {Separator} from "@/shared/ui/Separator/Separator";
 
 export function LoginForm() {
   const { login, loading, rememberMe, setRememberMe, error } = useAuthStore();

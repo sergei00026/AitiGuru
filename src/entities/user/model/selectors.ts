@@ -6,5 +6,3 @@ export const useAuthUser = () =>
 export const useAuthLoading = () =>
   useAuthStore((s) => s.loading);
 
-export const useIsAuth = () =>
-  useAuthStore((s) => Boolean(s.token));
